@@ -1,0 +1,178 @@
+
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+   
+    background-color: #f8f8f8;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* ---------------- NAVBAR ---------------- */
+
+nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 80px;
+   background-image: url(Cover-image-milk-delivery-app-scaled.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.right_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.right_nav img{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+li{
+    list-style: none;
+}
+li:hover{
+    color: lightgreen;
+}
+
+.right_nav li {
+
+    font-size: 25px;
+    font-weight: bold;
+    color: green;
+    cursor: pointer;
+}
+
+.right_nav h6{
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: gray;
+    cursor: pointer;
+}
+
+.left_nav{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+.left_nav a:hover{
+    color: green;
+}
+
+
+.left_nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+/* ICON BOX */
+
+.loram{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:20px;
+  margin-bottom:50px;
+}
+
+.loram p{
+  color:black;
+  font-size: 20px;
+  text-decoration:underline;
+  font-weight:600;
+  cursor: pointer;
+}
+
+.loram h1{
+  font-size:32px;
+  font-weight:700;
+  color:darkblue;
+}
+
+/* ICON SECTION */
+
+.icon{
+  display:flex;
+  justify-content:center;
+  align-items:stretch;
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+/* CARD */
+
+.box{
+  width:300px;
+  height: 300px;
+  padding:30px 20px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  gap:15px;
+  border-radius:12px;
+  background:#f7efef;
+  transition:0.3s;
+}
+
+.box:hover{
+  transform:translateY(-8px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ICON CIRCLE */
+
+.box i{
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  background:#ffe9c5;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:22px;
+  color:#333;
+}
+
+/* TEXT */
+
+.box h6{
+    text-transform: capitalize;
+  font-size:16px;
+  font-weight:700;
+}
+
+.box p{
+    text-transform: capitalize;
+    font-size:14px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* PAGE */
+.page2{
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+
