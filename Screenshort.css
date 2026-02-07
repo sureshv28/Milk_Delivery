@@ -7,7 +7,7 @@
 }
 
 body{
-  background:#fff;
+  background:#f7efef;
   
 }
 
@@ -88,10 +88,61 @@ li:hover{
     margin-top: 15%;
 }
 .torn-right{
-    padding:60px;
+    width: 40%;
+    height: 100%;
+    padding:70px;
     color: white;
+}
+.image{
+    width: 30%;
 }
 .image img{
     margin-top: 10px;
     width: 300px;
+}
+
+/* ---------------- Button ---------------- */
+
+
+.btn-group{
+    display: flex;
+    gap: 30px;
+    width: 300px;
+    height: 50px;
+
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    transition:0.3s;
+    
+}
+button:hover{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+  transform:translateY(1px);
+  box-shadow:5px 10px 10px #f7efef;
+}
+
+
+
+.side-image{
+    position: absolute;
+    right: 0px;
+    
+}
+.side-image img{
+    width: 550px;
+    height: 400px;
+}
+.side-image img{
+  width:550px;
+  filter:drop-shadow(0 15px 30px rgba(1,1,0,10));
 }
