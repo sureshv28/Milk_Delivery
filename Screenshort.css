@@ -93,12 +93,17 @@ li:hover{
     padding:70px;
     color: white;
 }
+.torn-right p{
+    letter-spacing: 0.4px;
+    line-height: 25px;
+}
 .image{
-    width: 30%;
+    width: 50%;
 }
 .image img{
     margin-top: 10px;
-    width: 300px;
+    width: 350px;
+    height: 350px;
 }
 
 /* ---------------- Button ---------------- */
@@ -146,3 +151,84 @@ button:hover{
   width:550px;
   filter:drop-shadow(0 15px 30px rgba(1,1,0,10));
 }
+
+
+@media (max-width: 1024px){
+
+    .torn{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .torn-right,
+    .image{
+        width: 100%;
+    }
+
+    .torn-right{
+        padding: 40px 20px;
+    }
+
+    .btn-group{
+        justify-content: center;
+        margin: auto;
+    }
+
+    .side-image img{
+        max-width: 400px;
+    }
+}
+
+
+
+@media (max-width: 768px){
+
+    nav{
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .left_nav{
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .torn{
+        min-height: auto;
+    }
+
+    .torn-right p{
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .btn-group{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    button{
+        max-width: 100%;
+    }
+
+    .side-image{
+        display: none;
+    }
+}
+
+
+@media (max-width: 480px){
+
+    .torn-right{
+        padding: 25px 15px;
+    }
+
+    .image img{
+        max-width: 280px;
+    }
+}
+

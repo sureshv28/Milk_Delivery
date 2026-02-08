@@ -1,20 +1,12 @@
 
-
-
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
 }
 body{
-   
     background-color: #f8f8f8;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
     
 }
 
@@ -82,58 +74,62 @@ li:hover{
     font-weight: 500;
 }
 
-/* Image */
+/* ---------------- REVIEWS ---------------- */
 
-img{
-    width: 500px;
-    height: 420px;
+.reviews{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0;
+    margin-top: 10%;
+    /* background-color: aqua; */
 }
-
-
-
-@media (max-width: 1024px){
-
-    .right_nav li{
-        font-size: 20px;
-    }
-
-    img{
-        max-width: 400px;
-    }
+.reviews h6{
+    font-size: 18px;
+    color: green;
+    letter-spacing: 1px;
 }
+.reviews p{
+    letter-spacing: 0.5px;
+    line-height: 25px;
+}
+.review-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    padding-left: 4%;
 
-@media (max-width: 768px){
-
-    nav{
-        flex-direction: column;
-        height: auto;
-        padding: 15px;
-        gap: 10px;
-    }
-
-    .left_nav{
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
+}
+.review-image{
+    width: 50%;
     
-
-    img{
-        max-width: 90%;
-    }
 }
-
-
-
-@media (max-width: 480px){
-
-    img{
-        max-width: 100%;
-    }
-
-    .right_nav li{
-        font-size: 16px;
-    }
+.review-image img{
+    position: absolute;
+    right: 200px;
+    top: 150px;
+    
 }
-
+.image{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.image h4{
+    color: green;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+}
+.image p{
+    font-size: 14px;
+    color: gray;
+}
+.image img{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    border: 3px solid black;
+}
